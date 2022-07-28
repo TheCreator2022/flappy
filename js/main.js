@@ -1,6 +1,6 @@
 var score = 0
 var x = [960, 420, 800]
-var y = [15, 45, 165]
+var y = [15, 45, 365]
 let GetLeft = () => {
   x[1] -= 10
   FlappyClicked();
