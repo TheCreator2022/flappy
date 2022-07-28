@@ -8,12 +8,18 @@ let GetLeft = () => {
 const FlappyClicked = () => {
   document.getElementById("audio1").play();
 }
+const ErrorPost = () => {
+  document.getElementById("audio2").play();
+}
 
 function UpdateGameArea() {
   document.getElementById("score").style.left = x[0] + "px"
   document.getElementById("score").style.top = y[0] + "px"
   document.getElementById("player").style.left = x[1] + "px"
   document.getElementById("player").style.top = y[1] + "px"
+  if (Math.sqrt(x[1]) == NaN) {
+    ErrorPost();
+  }
 }
 
 setInterval(UpdateGameArea, 100)
