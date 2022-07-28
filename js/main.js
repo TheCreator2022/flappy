@@ -29,6 +29,8 @@ function UpdateGameArea() {
   document.getElementById("score").style.top = y[0] + "px"
   document.getElementById("player").style.left = x[1] + "px"
   document.getElementById("player").style.top = y[1] + "px"
+  document.getElementById("square").style.left = x[2] + "px"
+  document.getElementById("square").style.top = y[2] + "px"
   if (Math.sqrt(x[1]) == NaN) {
     ErrorPost();
   }
