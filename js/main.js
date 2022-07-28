@@ -5,6 +5,10 @@ let GetLeft = () => {
   x[1] -= 10
   FlappyClicked();
 }
+let GetRight = () => {
+  x[1] += 10
+  FlappyClicked();
+}
 const FlappyClicked = () => {
   document.getElementById("audio1").play();
 }
