@@ -1,6 +1,6 @@
 var score = 0
-var x = [30, 420, 60]
-var y = [10, 45, 25]
+var x = [420, 420, 60]
+var y = [15, 45, 25]
 
 function UpdateGameArea() {
   document.getElementById("score").style.left = x[0] + "px"
