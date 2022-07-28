@@ -36,6 +36,10 @@ function UpdateGameArea() {
   }
   document.getElementById("score").innerText = score
   document.body.style.backgroundColor = "rgb(128, 128, 128)" // We so Alpha omega layers color.
+  if (x[1] >= x[2]) {
+   x[2] += 60
+   score += 1
+  }
 }
 
 setInterval(UpdateGameArea, 100)
