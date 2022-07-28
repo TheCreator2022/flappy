@@ -1,5 +1,5 @@
 var score = 0
-var x = [960, 420, 60]
+var x = [960, 420, 800]
 var y = [15, 45, 25]
 let GetLeft = () => {
   x[1] -= 10
@@ -32,6 +32,8 @@ function UpdateGameArea() {
   if (Math.sqrt(x[1]) == NaN) {
     ErrorPost();
   }
+  document.getElementById("score").innerText = score
+  document.body.style.backgroundColor = "rgb(128, 128, 128)" // We so Alpha omega layers color.
 }
 
 setInterval(UpdateGameArea, 100)
