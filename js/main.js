@@ -1,5 +1,5 @@
 var score = 0
-var x = [420, 420, 60]
+var x = [960, 420, 60]
 var y = [15, 45, 25]
 
 function UpdateGameArea() {
