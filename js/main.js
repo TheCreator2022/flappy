@@ -9,6 +9,14 @@ let GetRight = () => {
   x[1] += 10
   FlappyClicked();
 }
+let GetUp = () => {
+  y[1] -= 10
+  FlappyClicked();
+}
+let GetDown = () => {
+  y[1] += 10
+  FlappyClicked();
+}
 const FlappyClicked = () => {
   document.getElementById("audio1").play();
 }
