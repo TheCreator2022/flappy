@@ -16,6 +16,11 @@ label.score {
   font-size:225px;
 }
 
+label.image {
+  display:grid;
+  position:absolute;
+}
+
 imagecode {
   display:block;
 }
@@ -24,6 +29,9 @@ imagecode {
 <body>
 <div class="ground">
 <label id="score" class="score" for="score">0</label>
+<label class="image" for="player">
+<img src="images/player.png" alt="Player"></img>
+</label>
 </div>
 <audio id="audio1" src="sounds/FlappyClick_2022-07-27_230056070.mp3"></audio>
 <audio id="audio2" src="sounds/ErrorPosition_2022-07-27_230813843.mp3"></audio>
